@@ -1,5 +1,14 @@
 {
     "name": "lewis/oauth2-server-redis",
+    "description": "Redis storage adapter for the League's PHP OAuth 2.0 server.",
+    "keywords": ["oauth2", "server", "league", "redis", "adpater"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Jason Lewis",
+            "email": "jason.lewis1991@gmail.com"
+        }
+    ],
     "require": {
         "predis/predis": "~0.8"
     },
@@ -13,10 +22,9 @@
             "Lewis\\OAuth2\\Server\\Storage\\": "src"
         }
     },
-    "authors": [
-        {
-            "name": "Jason Lewis",
-            "email": "jason.lewis1991@gmail.com"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
         }
-    ]
+    }
 }
