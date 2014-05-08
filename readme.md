@@ -2,7 +2,7 @@
 
 This is a Redis storage adapter for the [League's PHP OAuth 2.0 server](https://github.com/thephpleague/oauth2-server) which is maintained by Alex Bilbie.
 
-[![Build Status](https://travis-ci.org/dingo/api.svg?branch=master)](https://travis-ci.org/dingo/api)
+[![Build Status](https://travis-ci.org/jasonlewis/oauth2-server-redis.svg?branch=master)](https://travis-ci.org/jasonlewis/oauth2-server-redis)
 
 ## Foreword
 
