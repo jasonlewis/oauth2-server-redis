@@ -1,0 +1,22 @@
+{
+    "name": "lewis/oauth2-server-redis",
+    "require": {
+        "predis/predis": "~0.8"
+    },
+    "require-dev": {
+        "league/oauth2-server": "4.0.*@dev",
+        "squizlabs/php_codesniffer": "~1.5",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lewis\\OAuth2\\Server\\Storage\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jason Lewis",
+            "email": "jason.lewis1991@gmail.com"
+        }
+    ]
+}
