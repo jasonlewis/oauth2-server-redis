@@ -12,7 +12,7 @@ This adapter is for the fourth version of the OAuth 2.0 server and as such is pr
 
 This storage adapter uses [Predis](https://github.com/nrk/predis) as an interface to Redis. Make sure you have Redis installed on your machine to use this adapter.
 
-You must get a new instance of the Predis client that is injected into the storage adapater.
+To begin you must new up and instance of the Predis client.
 
 ```php
 $redis = new Predis\Client;
@@ -25,8 +25,8 @@ $server->setClientStorage(new Lewis\OAuth2\Server\Storage\RedisClient($redis));
 $server->setSessionStorage(new Lewis\OAuth2\Server\Storage\RedisSession($redis));
 $server->setAccessTokenStorage(new Lewis\OAuth2\Server\Storage\RedisAccessToken($redis));
 $server->setRefreshTokenStorage(new Lewis\OAuth2\Server\Storage\RedisRefreshTokenStorage($redis));
-$server->setAuthCodeStorage(new Lewis\OAuth2\Server\Storage\RedisAuthCodeStorage($redis));
-$server->setScopeStorage(new Lewis\OAuth2\Server\Storage\RedisScopeStorage($redis));
+$server->setAuthCodeStorage(new Lewis\OAuth2\Server\Storage\RedisAuthCode($redis));
+$server->setScopeStorage(new Lewis\OAuth2\Server\Storage\RedisScope($redis));
 ```
 
 ## License
